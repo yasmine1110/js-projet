@@ -4,69 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <section class="bg-image=">
-        <h1>contact et information</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat iusto vero et fugit architecto quasi incidunt id rerum quibusdam alias cum, eum ratione facilis nulla qui debitis, inventore ex. Aliquid?</p>
-       <button>nous contacter</button>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  
+<body class="bg-white font-sans">
+    <section class="text-center py-4 px-6 ">
+        <div class="bg-[url('pexels-ozgomz-12895723.jpg')] h-124 w-full bg-cover bg-center">
+        
+        <div class="backdrop-blur-sm h-full w-full space-y-8 flex-col justify-center items-center p-8">
+<h1 class="text-5xl">contacter nous</h1>
+<p class="text-2xl mx-64">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt sit eaque recusandae, in debitis neque est porro consectetur, a exercitationem iure nulla minima reprehenderit laborum. Distinctio temporibus atque veritatis.</p>
+       <button class="mt-4 inline-block bg-blue-500 text-white px-5 py-3 font-medium" >nous contacter</button>
+</div>
+</div>
     </section>
-    <section>
-        <div>
-            <div>
-               <h3>numéro de telephone </h3> <br>
+    <section class="bg-white font-sans">
+        <div class="grid grid-cols-3 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div  class="bg-[#FFFFFF] p-2 rounded-xl text-center mt-4">
+                <div class="bg-[#f5f5dc]">
+                    <span class="text-blue-600 font-bold">📞</span>
+               <h3>numéro de telephone </h3> 
                <p>+22505086594</p>
             </div>
-            <div> 
-                 <h3>adress email </h3> <br>
+            <div  class="bg-[#f5f5dc] p-6 rounded-xl text-center"> 
+                <span class="text-blue-600 font-bold">✉️</span>
+                 <h3>adress email </h3>
                <p>yaoakissi@gmail.com</p></div>
         
-        <div>
-             <h3>whatsapp </h3> <br>
+        <div  class="bg-[#f5f5dc]">
+             <h3>whatsapp </h3>
                <p>+22505086594</p>
         </div>
-        <div>
-             <h3>emplacement </h3> <br>
+        <div class="bg-[#f5f5dc]">
+            <span class="text-blue-600 font-bold">📍</span>
+             <h3>emplacement </h3> 
                <p>treichville,rue 11</p>
         </div>
 
        </div> 
-       <div>
-        <h1>send message</h1>
-        <p>
+       <div class="bg-[#FFFFFF] p-6 rounded-xl text-center"  >
+        <h1 class="text-4xl md:text-5xl font-bold mt-4 leading-tight ">send message</h1>
+        <p class="text-300 mt-4 max-w-xl max-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa autem fugit dolore assumenda temporibus quod, accusantium enim quisquam modi fuga, dolorum unde asperiores saepe cupiditate voluptatem, eos delectus laboriosam.
         </p>
-<form action="">
-    <div>
-    <input type="text" placeholder="pays">
-    <input type="text" placeholder="pays">
-    <input type="text" placeholder="numero de telephone">
-    <input type="text" placeholder="pays">
+<form action="" class="space-y-4">
+    <div  class="grid grid-cols-2 gap-4">
+    <input type="text" placeholder="pays" class="border border-gray-300 px-4 py-2 rounded w-full">
+    <input type="text" placeholder="Objet" class="border border-gray-300 px-4 py-2 rounded w-full">
+    <input type="text" placeholder="numero de telephone" class="border border-gray-300 px-4 py-2 rounded w-full">
+    <input type="text" placeholder="Email" class="border border-gray-300 px-4 py-2 rounded w-full">
 
 </div>
-<textarea name="" id="" maxlength="250">message</textarea>*
+<textarea name="" id="" maxlength="250" row="5" class="border border-gray-300 px-4 py-2 rounded w-full">message</textarea>
 </form>
- <button>nous contacter</button>
+ <button class="mt-6 inline-block bg-blue-500 text-white px-5 py-3 font-medium">nous contacter</button>
 
        </div>
+       </div>
     </section>
-<section>
-    <h1>notre localisation sur google maps</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat dolore dolorum corporis, recusandae quasi ipsum molestiae numquam quo odio, praesentium cumque hic suscipit error nulla similique voluptatem saepe reiciendis.</p>
-<img src="" alt="">
 
+
+<section class="bg-white font-sans py-2 items-center justify-center text-center">
+    <div class="bg-[#FFFFFF] p-2 rounded-xl text-center">
+    <h1 class="text-4xl md:text-3xl font-bold mt-4 leading-tight ">notre localisation sur google maps</h1>
+    <p class="text-2xl mx-6 mt-5 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat dolore dolorum corporis, recusandae quasi ipsum molestiae numquam quo odio, praesentium cumque hic suscipit error nulla similique voluptatem saepe reiciendis.</p>
+<div class="m-100 py-2 ">
+    <img class="mx-auto"  src="20150521212754-google-maps-location-travel-location.jpeg" alt="">
+</div>
+</div>
 </section>
-<section>
-    <div>
-        <h1>equipe</h1>
-    <form action="">
-         <input type="text" placeholder="nom">
-    <input type="text" placeholder="poste">
-    <textarea name="" id="">description</textarea>
-    <input type="submit" value="ajouter">
-    </form>
-    </div>
-</section>
+
 </body>
 </html>
