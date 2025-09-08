@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   </head>
   <body>
     <header>
@@ -45,10 +46,10 @@
         />
         <ul class="flex items-center justify-center space-x-4">
           <li class="">
-            <a href="index.html"> ACCUEIL </a>
+            <a href="accueil.html"> ACCUEIL </a>
           </li>
           <li class="">
-            <a href="/about.html"> A PROPOS </a>
+            <a href="./about.html"> A PROPOS </a>
           </li>
           <li class="">
             <a href="#"> BLOG </a>
@@ -67,13 +68,14 @@
     </header>
     <section>
       <div
-        class="bg-[url('../medias/background.png')] h-124 w-full bg-cover bg-center"
+        class="relative w-full h-128 md:h-128 flex items-center justify-center text-center"
+        style="background: url(medias/background.png) center/cover no-repeat"
       >
         <div
-          class="backdrop-blur-sm h-full w-full space-y-8 flex flex-col justify-center items-center p-8"
+          class="text-white space-y-8 flex flex-col justify-center items-center p-8 m-8"
         >
           <p class="text-5xl">Lorem ipsum dolor sit amet consectetur.</p>
-          <p class="text-2xl mx-64">
+          <p class="text-2xl md:mx-64">
             Lorem ipsum dolor sit amet consectetur. Diam ut tristique hac
             dictum. Viverra nunc sagittis tincidunt iaculis a. Auctor accumsan
             viverra ac et. Arcu integer quis vestibulum malesuada. Cras tellus
@@ -106,7 +108,7 @@
         </div>
         <div>
           <img
-            src="/medias/groupe.png"
+            src="./medias/groupe.png"
             alt=""
             class="rounded-3xl ml-8 w-108 h-108 object-cover"
           />
@@ -287,10 +289,129 @@
         </div>
       </div>
     </section>
-    <footer class="h-screen">
-      <div></div>
-      <div></div>
+    <footer class="bg-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Colonne 1 -->
+          <div>
+            <div class="flex items-center mb-4">
+              <div
+                class="h-8 w-8 rounded-full bg-blue-400 flex items-center justify-center text-white font-bold"
+              >
+                G
+              </div>
+              <span class="ml-2 text-lg font-light text-blue-400"
+                >GEMINI & CO</span
+              >
+            </div>
+            <p class="text-gray-600 mb-4">
+              Votre partenaire de confiance pour tous vos projets digitaux et
+              bien plus encore.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-500 hover:text-blue-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-blue-400"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-blue-400"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Colonne 2 -->
+          <div>
+            <h3 class="text-lg font-semibold text-blue-400 mb-4">ENTREPRISE</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >ACCUEIL</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >SERVICES</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500">OFFRES</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 -->
+          <div>
+            <h3 class="text-lg font-semibold text-blue-400 mb-4">SERVICES</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Origami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Finance</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Import & Export</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Conseil</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 4 -->
+          <div>
+            <h3 class="text-lg font-semibold text-blue-400 mb-4">
+              OFFRES & ÉVÉNEMENTS
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Offres spéciales</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Événements à venir</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Webinaires</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Formations</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+          class="border-t border-gray-200 mt-12 pt-6 text-center text-gray-500 text-sm"
+        >
+          <p>&copy; copyright 2023 GEMINI & CO. Tous droits réservés.</p>
+        </div>
+      </div>
     </footer>
+    >
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

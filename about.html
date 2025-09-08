@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link href="./src/output.css" rel="stylesheet" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   </head>
   <body>
     <header>
@@ -41,12 +43,12 @@
       >
         <img
           src="./medias/logo.png"
-          alt=""
+          alt="logo"
           class="object-cover w-20 h-18 p-2"
         />
         <ul class="flex items-center justify-center space-x-4">
           <li class="">
-            <a href="/index.html"> ACCUEIL </a>
+            <a href="./accueil.html"> ACCUEIL </a>
           </li>
           <li class="">
             <a href="/about.html"> A PROPOS </a>
@@ -76,7 +78,11 @@
         </p>
       </div>
       <div class="w-1/2">
-        <img src="/medias/logorogner.png" alt="" class="object-cover" />
+        <img
+          src="./medias/logorogner.png"
+          alt="logorogner"
+          class="object-cover"
+        />
       </div>
     </section>
     <section class="shadow-xl mx-16 py-2">
@@ -101,12 +107,16 @@
           </button>
         </div>
         <div>
-          <img src="/medias/personnes.png" alt="" class="rounded-xl" />
+          <img src="./medias/personnes.png" alt="" class="rounded-xl" />
         </div>
       </section>
       <section class="flex m-16 items-center p-8 space-x-8">
         <div class="">
-          <img src="/medias/ville.png" alt="" class="rounded-xl object-cover" />
+          <img
+            src="./medias/ville.png"
+            alt=""
+            class="rounded-xl object-cover"
+          />
         </div>
         <div class="flex-1 space-y-4 w-1/2">
           <h1 class="text-3xl font-semibold mb-8">Nos objectifs</h1>
@@ -160,7 +170,128 @@
         </div>
       </div>
     </section>
-    <footer class="h-screen"></footer>
+    <footer class="bg-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Colonne 1 -->
+          <div>
+            <div class="flex items-center mb-4">
+              <div
+                class="h-8 w-8 rounded-full bg-blue-400 flex items-center justify-center text-white font-bold"
+              >
+                G
+              </div>
+              <span class="ml-2 text-lg font-light text-blue-400"
+                >GEMINI & CO</span
+              >
+            </div>
+            <p class="text-gray-600 mb-4">
+              Votre partenaire de confiance pour tous vos projets digitaux et
+              bien plus encore.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-500 hover:text-blue-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-blue-400"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-blue-400"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Colonne 2 -->
+          <div>
+            <h3 class="text-lg font-semibold text-blue-400 mb-4">ENTREPRISE</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >ACCUEIL</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >SERVICES</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500">OFFRES</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 -->
+          <div>
+            <h3 class="text-lg font-semibold text-blue-400 mb-4">SERVICES</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Origami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Finance</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Import & Export</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Conseil</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 4 -->
+          <div>
+            <h3 class="text-lg font-semibold text-blue-400 mb-4">
+              OFFRES & ÉVÉNEMENTS
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Offres spéciales</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Événements à venir</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Webinaires</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-blue-500"
+                  >Formations</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+          class="border-t border-gray-200 mt-12 pt-6 text-center text-gray-500 text-sm"
+        >
+          <p>&copy; copyright 2023 GEMINI & CO. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
 
     <script
       type="module"
