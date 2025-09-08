@@ -1,79 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="src/output.css" />
+</head>
+
 <body class="bg-white font-sans">
-    <section class="text-center py-4 px-6 ">
-        <div class="bg-[url('pexels-ozgomz-12895723.jpg')] h-124 w-full bg-cover bg-center">
-        
-        <div class="backdrop-blur-sm h-full w-full space-y-8 flex-col justify-center items-center p-8">
-<h1 class="text-5xl">contacter nous</h1>
-<p class="text-2xl mx-64">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt sit eaque recusandae, in debitis neque est porro consectetur, a exercitationem iure nulla minima reprehenderit laborum. Distinctio temporibus atque veritatis.</p>
-       <button class="mt-4 inline-block bg-blue-500 text-white px-5 py-3 font-medium" >nous contacter</button>
-</div>
-</div>
-    </section>
-    <section class="bg-white font-sans">
-        <div class="grid grid-cols-3 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div  class="bg-[#FFFFFF] p-2 rounded-xl text-center mt-4">
-                <div class="bg-[#f5f5dc]">
-                    <span class="text-blue-600 font-bold">📞</span>
-               <h3>numéro de telephone </h3> 
-               <p>+22505086594</p>
-            </div>
-            <div  class="bg-[#f5f5dc] p-6 rounded-xl text-center"> 
-                <span class="text-blue-600 font-bold">✉️</span>
-                 <h3>adress email </h3>
-               <p>yaoakissi@gmail.com</p></div>
-        
-        <div  class="bg-[#f5f5dc]">
-             <h3>whatsapp </h3>
-               <p>+22505086594</p>
-        </div>
-        <div class="bg-[#f5f5dc]">
-            <span class="text-blue-600 font-bold">📍</span>
-             <h3>emplacement </h3> 
-               <p>treichville,rue 11</p>
-        </div>
-
-       </div> 
-       <div class="bg-[#FFFFFF] p-6 rounded-xl text-center"  >
-        <h1 class="text-4xl md:text-5xl font-bold mt-4 leading-tight ">send message</h1>
-        <p class="text-300 mt-4 max-w-xl max-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa autem fugit dolore assumenda temporibus quod, accusantium enim quisquam modi fuga, dolorum unde asperiores saepe cupiditate voluptatem, eos delectus laboriosam.
+  <!-- Hero Contact -->
+  <section class="text-center py-12 px-6">
+    <div class="bg-[url('pexels-ozgomz-12895723.jpg')] h-[500px] w-full bg-cover bg-center flex items-center justify-center">
+      <div class="backdrop-blur-sm h-full w-full flex flex-col items-center justify-center space-y-8 p-8 bg-black/30 text-white">
+        <h1 class="text-5xl font-bold">Contacter Nous</h1>
+        <p class="text-2xl max-w-3xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt sit eaque recusandae, in debitis neque est porro.
         </p>
-<form action="" class="space-y-4">
-    <div  class="grid grid-cols-2 gap-4">
-    <input type="text" placeholder="pays" class="border border-gray-300 px-4 py-2 rounded w-full">
-    <input type="text" placeholder="Objet" class="border border-gray-300 px-4 py-2 rounded w-full">
-    <input type="text" placeholder="numero de telephone" class="border border-gray-300 px-4 py-2 rounded w-full">
-    <input type="text" placeholder="Email" class="border border-gray-300 px-4 py-2 rounded w-full">
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition">Nous Contacter</button>
+      </div>
+    </div>
+  </section>
 
-</div>
-<textarea name="" id="" maxlength="250" row="5" class="border border-gray-300 px-4 py-2 rounded w-full">message</textarea>
-</form>
- <button class="mt-6 inline-block bg-blue-500 text-white px-5 py-3 font-medium">nous contacter</button>
+  <!-- Coordonnées -->
+  <section class="py-12">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      <div class="bg-[#f5f5dc] p-6 rounded-xl text-center shadow">
+        <span class="text-blue-600 text-3xl">📞</span>
+        <h3 class="text-xl font-semibold mt-2">Numéro de téléphone</h3>
+        <p>+22505086594</p>
+      </div>
 
-       </div>
-       </div>
-    </section>
+      <div class="bg-[#f5f5dc] p-6 rounded-xl text-center shadow">
+        <span class="text-blue-600 text-3xl">✉️</span>
+        <h3 class="text-xl font-semibold mt-2">Adresse Email</h3>
+        <p>yaoakissi@gmail.com</p>
+      </div>
 
+      <div class="bg-[#f5f5dc] p-6 rounded-xl text-center shadow">
+        <span class="text-blue-600 text-3xl">💬</span>
+        <h3 class="text-xl font-semibold mt-2">WhatsApp</h3>
+        <p>+22505086594</p>
+      </div>
 
-<section class="bg-white font-sans py-2 items-center justify-center text-center">
-    <div class="bg-[#FFFFFF] p-2 rounded-xl text-center">
-    <h1 class="text-4xl md:text-3xl font-bold mt-4 leading-tight ">notre localisation sur google maps</h1>
-    <p class="text-2xl mx-6 mt-5 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat dolore dolorum corporis, recusandae quasi ipsum molestiae numquam quo odio, praesentium cumque hic suscipit error nulla similique voluptatem saepe reiciendis.</p>
-<div class="m-100 py-2 ">
-    <img class="mx-auto"  src="20150521212754-google-maps-location-travel-location.jpeg" alt="">
-</div>
-</div>
-</section>
+      <div class="bg-[#f5f5dc] p-6 rounded-xl text-center shadow col-span-full lg:col-span-1">
+        <span class="text-blue-600 text-3xl">📍</span>
+        <h3 class="text-xl font-semibold mt-2">Emplacement</h3>
+        <p>Treichville, Rue 11</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Formulaire -->
+  <section class="bg-white py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">Envoyer un Message</h1>
+      <p class="text-gray-600 mt-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa autem fugit dolore assumenda temporibus.
+      </p>
+
+      <form action="" class="mt-8 space-y-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Pays" class="border border-gray-300 px-4 py-2 rounded w-full" />
+          <input type="text" placeholder="Objet" class="border border-gray-300 px-4 py-2 rounded w-full" />
+          <input type="text" placeholder="Numéro de téléphone" class="border border-gray-300 px-4 py-2 rounded w-full" />
+          <input type="email" placeholder="Email" class="border border-gray-300 px-4 py-2 rounded w-full" />
+        </div>
+        <textarea maxlength="250" rows="5" placeholder="Message" class="border border-gray-300 px-4 py-2 rounded w-full resize-none"></textarea>
+        <button type="submit" class="mt-6 bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition">Nous Contacter</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section class="py-12 bg-gray-50 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl font-bold">Notre localisation sur Google Maps</h1>
+      <p class="text-gray-700 mt-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat dolore dolorum.
+      </p>
+      <div class="mt-8">
+        <img src="20150521212754-google-maps-location-travel-location.jpeg" alt="Carte Google Maps"
+          class="mx-auto rounded-lg shadow" />
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>

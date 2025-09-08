@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <section>
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Équipe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c6aa1',
+                        primaryDark: '#1e5485',
+                        lightBlue: '#f0f7ff',
+                        borderBlue: '#a0c5e4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .photo-zone {
+            background-size: cover;
+            background-position: center;
+            transition: all 0.3s ease;
+        }
+        .photo-zone:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .input-field {
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(44, 106, 161, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+        <!-- Titre "EQUIPE" -->
+        <h1 class="text-blue-400 text-3xl font-bold text-lef uppercase tracking-wider py-8">
+            Équipe
+        </h1>
+       <div class="px-10 pb-10">
+            <!-- Zone photo avec amélioration visuelle -->
+            <div class="photo-zone w-48 h-48 mx-auto mb-8 border-2 border-dashed border-borderBlue rounded-lg flex flex-col items-center justify-center cursor-pointer bg-lightBlue">
+                <div class="text-4xl text-primary mb-2">📷</div>
+                <div class="text-sm text-gray-600">Cliquez ou glissez-déposez une photo</div>
+       </div>
+            
+            <!-- Champs de saisie élargis -->
+            <div class="space-y-6">
+                <div>
+      <label for="name" class="block text-primary font-medium mb-2 text-lg">Nom</label>
+
+<input 
+  type="text" 
+  id="name" 
+  placeholder="Entrez le nom complet" 
+  class="w-[600px] px-6 py-4 bg-lightBlue rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg">
+</div> 
+                <div>
+                    <label for="position" class="block text-primary font-medium mb-2 text-lg">Poste</label>
+                <input 
+  type="text" 
+  id="name" 
+  placeholder="Entrez le Poste occupé" 
+  class="w-[600px] px-6 py-4 bg-lightBlue rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg">
+</div>
+
+                
+                <div>
+                    <label for="description" class="block text-primary font-medium mb-2 text-lg">Description</label>
+                <input 
+  type="text" 
+  id="name" 
+  placeholder="Décrivez le rôle et les responsabilités de cette personne" 
+  class="w-[600px] px-6 py-12 bg-lightBlue rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg">
+</div>
+
+            </div>
+            
+            
+            <div class="flex justify-start">
+  <button class="text-left bg-primary text-white font-semibold uppercase tracking-wider py-6 px-8 rounded-lg mt-8 hover:bg-primaryDark transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 text-lg">
+    Ajouter
+  </button>
+</div>
+
+        </div>
+    <!-- </div> -->
+
+    <script>
+        // Script pour gérer le téléversement de photo
+        const photoZone = document.querySelector('.photo-zone');
+        
+        photoZone.addEventListener('click', function() {
+            // Créer un input file caché
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = 'image/*';
+            
+            // Déclencher le click sur l'input file
+            fileInput.click();
+            
+            // Gérer la sélection de fichier
+            fileInput.addEventListener('change', function() {
+                if (this.files && this.files[0]) {
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        // Mettre à jour la zone photo avec l'image sélectionnée
+                        photoZone.innerHTML = '';
+                        photoZone.style.backgroundImage = url(${e.target.result});
+                        photoZone.classList.add('border-solid', 'border-2', 'border-primary');
+                    }
+                    
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+        });
+        
+        // Gestion du glisser-déposer améliorée
+        photoZone.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            this.classList.remove('border-borderBlue');
+            this.classList.add('border-primary', 'bg-blue-100', 'border-2');
+        });
+        
+        photoZone.addEventListener('dragleave', function() {
+            this.classList.add('border-borderBlue');
+            this.classList.remove('border-primary', 'bg-blue-100');
+            if (!this.style.backgroundImage || this.style.backgroundImage === 'none') {
+                this.classList.add('border-dashed');
+            }
+        });
+        
+        photoZone.addEventListener('drop', function(e) {
+            e.preventDefault();
+            this.classList.add('border-borderBlue');
+            this.classList.remove('border-primary', 'bg-blue-100');
+            
+            if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    photoZone.innerHTML = '';
+                    photoZone.style.backgroundImage = url(${e.target.result});
+                    photoZone.classList.add('border-solid', 'border-2', 'border-primary');
+                    photoZone.classList.remove('border-dashed');
+                }
+                
+                reader.readAsDataURL(e.dataTransfer.files[0]);
+            }
+        });
+    </script>
+</body>
+</html>
+   </section> 
+</body>
+</html>
